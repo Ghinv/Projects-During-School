@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="730.0" minWidth="600.0" prefHeight="730.0" prefWidth="600.0" style="-fx-background-color: #abd3ea; -fx-background-radius: 5px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="side.project.GUIController">
+   <children>
+      <Pane layoutX="137.0" layoutY="621.0" prefHeight="89.0" prefWidth="329.0" style="-fx-background-radius: 10px; -fx-background-color: #95bbd1;">
+         <children>
+            <Text fx:id="lblResult" layoutX="40.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="248.13671875" />
+            <Text fx:id="lblResult1" layoutX="40.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="248.13671875" />
+            <Text fx:id="lblResult2" layoutX="11.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="306.13671875" />
+         </children>
+      </Pane>
+      <Pane layoutX="58.0" layoutY="156.0" prefHeight="417.0" prefWidth="486.0" style="-fx-background-radius: 10px; -fx-background-color: #95bbd1;" />
+      <TextField fx:id="txtPrincipal" layoutX="374.0" layoutY="172.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <AnchorPane layoutX="374.0" layoutY="225.0">
+         <children>
+            <TextField fx:id="txtDividend" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="264.0" layoutY="585.0" mnemonicParsing="false" onAction="#btnCalculateAction" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" text="Calculate" AnchorPane.bottomAnchor="118.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="261.0" />
+      <Text layoutX="155.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASB Calculator" AnchorPane.bottomAnchor="650.58740234375" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="153.32080078125" AnchorPane.topAnchor="26.05810546875">
+         <font>
+            <Font name="Tw Cen MT" size="49.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Principal Amount">
+         <font>
+            <Font name="Tw Cen MT" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dividend (sen/unit)">
+         <font>
+            <Font name="Tw Cen MT" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonus (sen/unit)">
+         <font>
+            <Font name="Tw Cen MT" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Added Bonus (sen/unit)">
+         <font>
+            <Font name="Tw Cen MT" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Unit for Added Bonus">
+         <font>
+            <Font name="Tw Cen MT" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtBonus" layoutX="375.0" layoutY="290.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txtAddedBonus" layoutX="374.0" layoutY="350.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <TextField fx:id="txtAddedBonusUnit" layoutX="375.0" layoutY="410.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <Text layoutX="75.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Period (year)">
+         <font>
+            <Font name="Tw Cen MT" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPeriod" layoutX="375.0" layoutY="470.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <Text layoutX="76.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit (monthly)">
+         <font>
+            <Font name="Tw Cen MT" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDeposit" layoutX="375.0" layoutY="530.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" />
+      <ComboBox fx:id="comboYear" layoutX="354.0" layoutY="92.0" onAction="#comboYearAction" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: #daeef0; -fx-border-color: #000000; -fx-border-radius: 4px;" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="92.0" />
+      <Text layoutX="141.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pull data from year:">
+         <font>
+            <Font name="Tw Cen MT" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

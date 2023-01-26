@@ -1,0 +1,33 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 Jan 2023, 5:34:33 pm
+    Author     : Sufyan
+*/
+
+.combo-box {
+    -fx-font: 14px \"Dubai Medium\";
+}
+
+
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill:  #536c54;
+    -fx-background-color: #7fcf84;
+    -fx-alignment: center;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-text-fill: #536c54;
+    -fx-background-color: white;
+}
+
+.combo-box .cell:selected {
+    -fx-text-fill: white;
+}
+
+.combo-box>.list-cell {
+    -fx-alignment: center;
+}
+
